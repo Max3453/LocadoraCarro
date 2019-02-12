@@ -1,0 +1,126 @@
+.car{
+
+  font-size: 35px;
+  padding-top: -27px;
+}
+
+
+.form-top{
+    
+  padding-top: 50px;
+
+}
+
+/*Spaço entre os inputs*/
+.input-space{
+
+  margin-left: 75px;
+
+}
+
+.label-space{
+
+  margin-left: 20px;
+}
+
+.input-space1{
+
+  margin-left: 32px;
+}
+
+#cor{
+
+  margin-left: 117px;
+}
+
+#anofabri{
+
+  margin-left: 7px;
+
+}
+
+#valordia{
+
+  margin-left: 13px;
+}
+
+#status{
+
+  margin-left: 27px;
+}
+
+#select1{
+
+  margin-left: 5px;
+  width: 221px;
+}
+
+#pot{
+
+  margin-left: 17px;
+  width: 220px;
+}
+
+#pot1{
+
+  margin-left: 43px;
+  width: 220px;
+
+}
+
+#pot2{
+
+  margin-left: 43px;
+  width: 220px;
+
+}
+
+#carga1{
+
+  margin-left: 27px;
+}
+
+#carga{
+
+  margin-left: 94px;
+  width: 223px;
+}
+
+#numEixo{
+
+  margin-left: 28px;
+}
+
+#numei{
+
+  margin-left: 15px;
+  width: 225px;
+}
+
+#numEixo1{
+
+  margin-left: 20px;
+}
+
+#numei1{
+
+  margin-left: 7px;
+  width: 220px;
+}
+
+#tipo1{
+
+  margin-left: 30px;
+}
+
+#select2{
+
+  margin-left: 112px;
+  width: 221px;
+}
+
+  /*CORES
+
+  MENU= #F2203C
+  
+  */
