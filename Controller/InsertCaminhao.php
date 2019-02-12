@@ -1,9 +1,9 @@
 <?php
 
   include_once 'Conexao.php';
-  include_once 'DALCaminhoes.php';
-  include_once 'Caminhoes.php';
-  include_once 'Veiculo.php';
+  include_once '../modelDAO/DAOCaminhao.php';
+  include_once '../Caminhao.php';
+  include_once '../Veiculo.php';
 
   
  $placa = $_POST['placa'];

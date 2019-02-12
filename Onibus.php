@@ -5,8 +5,8 @@ class Onibus extends Veiculo {
     private $passageiros;
     private $eixos;
     
-    public function __construct($carro, $placa, $cor, $modelo, $fabricante, $fabricação, $valordia, $situação,$passageiros, $eixos) {
-        parent::__construct($carro, $placa, $cor, $modelo, $fabricante, $fabricação, $valordia, $situação);
+    public function __construct($placa, $cor, $modelo, $fabricante, $fabricacao, $valordia, $situação,$passageiros, $eixos) {
+        parent::__construct($placa, $cor, $modelo, $fabricante, $fabricacao, $valordia, $situação);
         $this->passageiros = $passageiros;
         $this->eixos = $eixos;
     }

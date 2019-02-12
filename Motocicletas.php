@@ -5,8 +5,8 @@ class Motocicletas extends Veiculo {
     private $potencia;
     private $tipo;
     
-    public function __construct($carro, $placa, $cor, $modelo, $fabricante, $fabricação, $valordia, $situação,$potencia, $tipo) {
-        parent::__construct($carro, $placa, $cor, $modelo, $fabricante, $fabricação, $valordia, $situação);
+    public function __construct($carro, $placa, $cor, $modelo, $fabricante, $fabricacao, $valordia, $situação,$potencia, $tipo) {
+        parent::__construct($carro, $placa, $cor, $modelo, $fabricante, $fabricacao, $valordia, $situação);
         $this->potencia = $potencia;
         $this->tipo = $tipo;
     }
