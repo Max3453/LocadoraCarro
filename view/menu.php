@@ -64,6 +64,19 @@
             <a class="dropdown-item" href="#"></a>
           </div>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lista
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="http://localhost/LocadoraCarro/view/Table_VeiculosP.php">Carro Passeio</a>
+            <a class="dropdown-item" href="http://localhost/LocadoraCarro/view/Table_VeiculosU.php">Carro Utilitário</a>
+            <a class="dropdown-item" href="http://localhost/LocadoraCarro/view/Table_Onibus.php">Ônibus</a>
+            <a class="dropdown-item" href="http://localhost/LocadoraCarro/view/Table_Motocicleta.php">Motocicleta</a>
+            <a class="dropdown-item" href="http://localhost/LocadoraCarro/view/Table_Caminhao.php">Caminhão</a>
+
+          </div>
+        </li>
       </div>
     </div>
   </nav>

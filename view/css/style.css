@@ -11,6 +11,12 @@
 
 }
 
+.form-table{
+  padding: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 /*Spaço entre os inputs*/
 .input-space{
 
