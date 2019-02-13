@@ -20,7 +20,7 @@ class DALCaminhoes {
         $sql = $sql . $Motocicletas->getModelo()."','";
         $sql = $sql . $Motocicletas->getFabricante()."','";
         $sql = $sql . $Motocicletas->getFabricacao()."','";
-        $sql = $sql . $Motocicletas->getSituação()."','";
+        $sql = $sql . $Motocicletas->getSituacao()."','";
         $sql = $sql . $Motocicletas->getPotencia()."','";
         $sql = $sql . $Motocicletas->getTipo()."');";
         
@@ -29,5 +29,24 @@ class DALCaminhoes {
         $banco = $this->conexao->GetBanco();
         $banco->query($sql);
         $this->conexao->Desconectar();
+    }
+    
+    public function Alterar($Motocicletas){
+        $sql = "update usuario set placa = ". $Motocicletas->getPlaca().
+        ", cor = '".$Motocicletas->getCor().
+        "', modelo = '".$Motocicletas->getModelo().
+        ", cor = '".$Motocicletas->getCor().
+        ", modelo = '".$Motocicletas->getModelo().
+        ", fabricante = '".$Motocicletas->getFabricante().
+        ", datafrabric = '".$Motocicletas->getFabricacao().
+        ", situaca = '".$Motocicletas->getSituacao().
+        ", potencia = '".$Motocicletas->getPotencia().
+        ", tipo = '".$Motocicletas->getTipo().
+        "' where id_Motocicletas = ".$Motocicletas->GetCodigo();
+        
+        $banco = $this->conexao->GetBanco();
+        $banco->query($sql);
+        $this->conexao->Desconectar();
+        
     }
 }
