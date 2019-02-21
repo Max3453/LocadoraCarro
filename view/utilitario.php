@@ -4,7 +4,7 @@
 <section>
 <div class="container">
     <div class="form-top">
-        <form action="" method="post">
+        <form action="../Controller/InsertVeiculosU.php" method="post">
             <div class="form-inline">
                 <div class="form-group mb-4">
                     <label for="placa">Placa</label>
@@ -56,16 +56,16 @@
             <div class="form-group">
                 <label for="tipo">Tipo</label>
                     <select class="form-control" name="tipo" id="tipo">
-                        <option value="u">Urbano</option>
-                        <option value="off">Off-Road</option>
+                        <option value="Urbano">Urbano</option>
+                        <option value="Off-Road">Off-Road</option>
                     </select>
             </div>
             <div class="form-group">
                 <label for="tracao">Tipo de tração</label>
                     <select class="form-control" name="tr" id="tracao">
-                        <option value="d">Dianteira</option>
-                        <option value="t">Traseira</option>
-                        <option value="f">4x4</option>
+                        <option value="Dianteira">Dianteira</option>
+                        <option value="Traseira">Traseira</option>
+                        <option value="4x4">4x4</option>
                     </select>
             </div>
             <div class="form-group">

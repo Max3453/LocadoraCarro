@@ -1,10 +1,10 @@
 <?php
 
 require_once('Conexao.php');
-require_once('Caminhoes.php');
-require_once ('Veiculo.php');
+require_once('../Caminhoes.php');
+require_once ('../Veiculo.php');
 
-class DALCaminhoes {
+class DAOCaminhoes {
     
     private $conexao;
     
@@ -20,12 +20,12 @@ class DALCaminhoes {
         $sql = $sql . $Caminhoes->getModelo()."','";
         $sql = $sql . $Caminhoes->getFabricante()."','";
         $sql = $sql . $Caminhoes->getFabricacao()."','";
-        $sql = $sql . $Caminhoes->getSituação()."','";
+        $sql = $sql . $Onibus->getValordia()."','";
+        $sql = $sql . $Caminhoes->getSituacao()."','";
         $sql = $sql . $Caminhoes->getNumeroEixos()."','";
         $sql = $sql . $Caminhoes->getCapacidadeCarga()."','";
         $sql = $sql . $Caminhoes->getPotencia()."');";
         
-        echo $sql;
         
         $banco = $this->conexao->GetBanco();
         $banco->query($sql);

@@ -10,6 +10,31 @@
 
 </head>
 <body>
+    <?php
+    require_once ('../Controller/Conexao.php');
+   
+    $banco = $this->conexao->GetBanco();
+    $sql = mysqli_query($banco,"selct * from caminhoes");
+    
+    while($col = mysql_fetch_assoc($sql)){
+        echo 'teste';
+    }
+    /*
+    while($fetch = mysql_fetch_row($result)){
+        echo "<p>";
+        foreach ($fetch as $value){
+            echo $value . " - ";
+        }
+        echo "</p>";
+    }
+    
+    $this->conexao->Desconectar();
+    */
+
+    
+    
+    ?>
+    
     <div class="form-table">
         <table class="table table-striped table-hover " >
         <thead>

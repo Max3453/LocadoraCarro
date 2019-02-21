@@ -4,7 +4,7 @@
 <section>
 <div class="container">
     <div class="form-top">
-        <form action="" method="post">
+        <form action="../Controller/InsertMotocicletas.php" method="post">
             <div class="form-inline">
                 <div class="form-group mb-4">
                     <label for="placa">Placa</label>

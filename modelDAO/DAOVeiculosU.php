@@ -1,10 +1,10 @@
 <?php
 
-require_once('../Conexao.php');
-require_once('../Motocicletas.php');
+require_once('Conexao.php');
+require_once('../VeiculosU.php');
 require_once ('../Veiculo.php');
 
-class DALCaminhoes {
+class DAOVeiculosU {
     
     private $conexao;
     
@@ -14,19 +14,19 @@ class DALCaminhoes {
     
     public function Inserir ($VeiculosU){
 
-        $sql = "INSERT INTO `motocicletas` (`placa`, `cor`, `modelo`, `fabricante`, `datafabric`, `situacao`, tipoTração, tetoSolar, diametroAro, tipo) VALUES ('";
+        $sql = "INSERT INTO `veiculou` (`placa`, `cor`, `modelo`, `fabricante`, `datafabric`, `situacao`, ´tracao´, `tetoSolar`, `diametroAro`, `tipo`) VALUES ('";
         $sql = $sql . $VeiculosU->getPlaca()."','";
         $sql = $sql . $VeiculosU->getCor()."','";
         $sql = $sql . $VeiculosU->getModelo()."','";
         $sql = $sql . $VeiculosU->getFabricante()."','";
         $sql = $sql . $VeiculosU->getFabricacao()."','";
-        $sql = $sql . $VeiculosU->getSituação()."','";
-        $sql = $sql . $VeiculosU->getTipoTração()."','";
+        $sql = $sql . $VeiculosU->getValordia()."','";
+        $sql = $sql . $VeiculosU->getSituacao()."','";
+        $sql = $sql . $VeiculosU->getTipoTracao()."','";
         $sql = $sql . $VeiculosU->getTetoSolar()."','";
         $sql = $sql . $VeiculosU->getDiametroAro()."','";
         $sql = $sql . $VeiculosU->getTipo()."');";
         
-        echo $sql;
         
         $banco = $this->conexao->GetBanco();
         $banco->query($sql);

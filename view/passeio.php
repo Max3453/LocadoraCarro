@@ -4,7 +4,7 @@
 <section>
 <div class="container">
     <div class="form-top">
-        <form action="../index.php" method="get">
+        <form action="../Controller/InsertVeiculosP.php" method="get">
             <div class="form-inline">
                 <div class="form-group mb-4">
                     <label for="placa">Placa</label>

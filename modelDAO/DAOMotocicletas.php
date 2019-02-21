@@ -1,10 +1,10 @@
 <?php
 
-require_once('../Conexao.php');
+require_once('Conexao.php');
 require_once('../Motocicletas.php');
 require_once ('../Veiculo.php');
 
-class DALCaminhoes {
+class DAOMotocicletas {
     
     private $conexao;
     
@@ -20,6 +20,7 @@ class DALCaminhoes {
         $sql = $sql . $Motocicletas->getModelo()."','";
         $sql = $sql . $Motocicletas->getFabricante()."','";
         $sql = $sql . $Motocicletas->getFabricacao()."','";
+        $sql = $sql . $Onibus->getValordia()."','";
         $sql = $sql . $Motocicletas->getSituacao()."','";
         $sql = $sql . $Motocicletas->getPotencia()."','";
         $sql = $sql . $Motocicletas->getTipo()."');";

@@ -4,18 +4,18 @@
         private $cor;
         private $modelo;
         private $fabricante;
-        private $fabricação;
+        private $fabricacao;
         private $valordia;
-        private $situação;
+        private $situacao;
             
         public function __construct($placa, $cor, $modelo, $fabricante, $fabricacao, $valordia, $situacao) {
             $this->placa = $placa;
             $this->cor = $cor;
             $this->modelo = $modelo;
             $this->fabricante = $fabricante;
-            $this->fabricação = $fabricacao;
+            $this->fabricacao = $fabricacao;
             $this->valordia = $valordia;
-            $this->situação = $situacao;
+            $this->situacao = $situacao;
         }
 
         
@@ -51,11 +51,11 @@
         }
         
         
-        public function setFabricacao($fabricação) {
-            $this->fabricação = $fabricação;             
+        public function setFabricacao($fabricacao) {
+            $this->fabricacao = $fabricacao;             
         }
         public function getFabricacao() {
-            return $this->fabricação;             
+            return $this->fabricacao;             
         }
         
         
@@ -67,11 +67,11 @@
         }
         
         
-        public function setSituação($situação) {
-            $this->situação = $situação;             
+        public function setSituacao($situacao) {
+            $this->situacao = $situacao;             
         }
-        public function getSituação() {
-            return $this->situação;         
+        public function getSituacao() {
+            return $this->situacao;         
         }
    
         }

@@ -1,10 +1,10 @@
 <?php
 
 require_once('Conexao.php');
-require_once('Caminhoes.php');
-require_once ('Veiculo.php');
+require_once('../Onibus.php');
+require_once ('../Veiculo.php');
 
-class DALCaminhoes {
+class DAOOnibus {
     
     private $conexao;
     
@@ -14,17 +14,17 @@ class DALCaminhoes {
     
     public function Inserir ($Onibus){
 
-        $sql = "INSERT INTO `caminhoes` (`placa`, `cor`, `modelo`, `fabricante`, `datafabric`, `situacao`, `passageiros`, `eixos`, `dhidraulica`) VALUES ('";
+        $sql = "INSERT INTO `onibus` (`placa`, `cor`, `modelo`, `fabricante`, `datafabric`,`valordia`, `situacao`, `numeropassageiros`, `numeroeixos`) VALUES ('";
         $sql = $sql . $Onibus->getPlaca()."','";
         $sql = $sql . $Onibus->getCor()."','";
         $sql = $sql . $Onibus->getModelo()."','";
         $sql = $sql . $Onibus->getFabricante()."','";
         $sql = $sql . $Onibus->getFabricacao()."','";
+        $sql = $sql . $Onibus->getValordia()."','";
         $sql = $sql . $Onibus->getSituação()."','";
         $sql = $sql . $Onibus->getPassageiros()."','";
         $sql = $sql . $Onibus->getEixos()."');";
         
-        echo $sql;
         
         $banco = $this->conexao->GetBanco();
         $banco->query($sql);

@@ -3,25 +3,25 @@ require_once 'Veiculo.php';
 
 class VeiculosU extends Veiculo {
   
-    private $tipoTração;
+    private $tipoTracao;
     private $tetoSolar;
     private $diametroAro ;
     private $tipo;
     
     
     
-    public function __construct($carro, $placa, $cor, $modelo, $fabricante, $fabricação, $valordia, $situação,$tipoTração, $tetoSolar, $diametroAro, $tipo) {
-        parent::__construct($carro, $placa, $cor, $modelo, $fabricante, $fabricação, $valordia, $situação);
+    public function __construct($placa, $cor, $modelo, $fabricante, $fabricacao, $valordia, $situacao,$tipoTracao, $tetoSolar, $diametroAro, $tipo) {
+        parent::__construct($placa, $cor, $modelo, $fabricante, $fabricacao, $valordia, $situacao);
         
-        $this->tipoTração = $tipoTração;
+        $this->tipoTracao = $tipoTracao;
         $this->tetoSolar = $tetoSolar;
         $this->diametroAro = $diametroAro;
         $this->tipo = $tipo;
     }
 
         
-    public function getTipoTração() {
-        return $this->tipoTração;
+    public function getTipoTracao() {
+        return $this->tipoTracao;
     }
 
     public function getTetoSolar() {
@@ -36,8 +36,8 @@ class VeiculosU extends Veiculo {
         return $this->tipo;
     }
 
-    public function setTipoTração($tipoTração) {
-        $this->tipoTração = $tipoTração;
+    public function setTipoTracao($tipoTracao) {
+        $this->tipoTracao = $tipoTracao;
     }
 
     public function setTetoSolar($tetoSolar) {
