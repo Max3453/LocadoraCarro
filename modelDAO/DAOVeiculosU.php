@@ -1,6 +1,6 @@
 <?php
 
-require_once('Conexao.php');
+require_once('../Controller/Conexao.php');
 require_once('../VeiculosU.php');
 require_once ('../Veiculo.php');
 
@@ -14,7 +14,7 @@ class DAOVeiculosU {
     
     public function Inserir ($VeiculosU){
 
-        $sql = "INSERT INTO `veiculou` (`placa`, `cor`, `modelo`, `fabricante`, `datafabric`, `situacao`, ´tracao´, `tetoSolar`, `diametroAro`, `tipo`) VALUES ('";
+        $sql = "INSERT INTO `veiculou` (`placa`, `cor`, `modelo`, `fabricante`, `datafabric`,`valordia`, `situacao`, ´tracao´, `tetoSolar`, `diametroAro`, `tipo`) VALUES ('";
         $sql = $sql . $VeiculosU->getPlaca()."','";
         $sql = $sql . $VeiculosU->getCor()."','";
         $sql = $sql . $VeiculosU->getModelo()."','";

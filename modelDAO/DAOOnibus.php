@@ -1,6 +1,6 @@
 <?php
 
-require_once('Conexao.php');
+require_once('../Controller/Conexao.php');
 require_once('../Onibus.php');
 require_once ('../Veiculo.php');
 
@@ -21,10 +21,11 @@ class DAOOnibus {
         $sql = $sql . $Onibus->getFabricante()."','";
         $sql = $sql . $Onibus->getFabricacao()."','";
         $sql = $sql . $Onibus->getValordia()."','";
-        $sql = $sql . $Onibus->getSituação()."','";
+        $sql = $sql . $Onibus->getSituacao()."','";
         $sql = $sql . $Onibus->getPassageiros()."','";
         $sql = $sql . $Onibus->getEixos()."');";
         
+        echo $sql;
         
         $banco = $this->conexao->GetBanco();
         $banco->query($sql);

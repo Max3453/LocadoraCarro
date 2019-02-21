@@ -1,6 +1,6 @@
 <?php
 
-  include_once 'Conexao.php';
+  require_once('../Controller/Conexao.php');
   include_once '../modelDAO/DAOVeiculosU.php';
   include_once '../VeiculosU.php';
   include_once '../Veiculo.php';
@@ -13,12 +13,13 @@ $fabricante = $_POST['fabricante'];
 $anofabri = $_POST['anofabri'];
 $valordia = $_POST['valordia'];
 $status = $_POST['status'];
-$tipoTracao = $_POST['tr'];
-$diametroAro = $_POST['daro'];
-$tetoSolar = $_POST['ts'];
-$tipo = $_POST['tipo'];
-    
-$c1 = new VeiculosU($placa, $cor, $modelo, $fabricante, $anofabri, $valordia, $status, $tipoTracao,$tetoSolar,$diametroAro, $tipo);
+$tracao = $_POST['tr'];
+$aro = $_POST['daro'];
+$tsolar = $_POST['ts'];
+$tp = $_POST['tipo'];
+
+
+$c1 = new VeiculosU($placa, $cor, $modelo, $fabricante, $anofabri, $valordia, $status, $tracao,$tsolar,$aro, $tp);
 $cx = new Conexao();
 $dao = new DAOVeiculosU($cx);
 $dao->Inserir($c1);

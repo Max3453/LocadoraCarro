@@ -43,15 +43,7 @@
                         </select>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="numporta">Número de portas</label>
-                    <select class="form-control" name="numporta" >
-                        <option value="0">Nenhum</option>
-                        <option value="1">Um</option>
-                        <option value="2">Dois</option>
-                        <option value="3">Três</option>
-                        <option value="4">Quatro</option>
-                    </select>
+
             </div>
             <div class="form-group">
                 <label for="tipo">Tipo</label>
@@ -77,7 +69,7 @@
                     <label class="form-check-label" for="ts">Possui teto solar?</label>&nbsp&nbsp
                 </div>   
             </div>
-            <button type="submit" class="btn btn-outline-primary">Submit</button>
+    <center><button type="submit" class="btn btn-outline-primary">Submit</button>
         </form>
     </div>
 </div>

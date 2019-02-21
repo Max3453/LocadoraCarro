@@ -3,15 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/Teste/modelDAO/DAOOnibus.php</file>
-            <file>file:/C:/xampp/htdocs/Teste/modelDAO/DAOCaminhoes.php</file>
-            <file>file:/C:/xampp/htdocs/Teste/Onibus.php</file>
-            <file>file:/C:/xampp/htdocs/Teste/Controller/InsertOnibus.php</file>
-            <file>file:/C:/xampp/htdocs/Teste/view/onibus.php</file>
-            <file>file:/C:/xampp/htdocs/Teste/Caminhoes.php</file>
+            <file>file:/C:/xampp/htdocs/Teste/view/utilitario.php</file>
+            <file>file:/C:/xampp/htdocs/Teste/modelDAO/DAOVeiculosU.php</file>
+            <file>file:/C:/xampp/htdocs/Teste/VeiculosU.php</file>
+            <file>file:/C:/xampp/htdocs/Teste/Controller/InsertVeiculosU.php</file>
             <file>file:/C:/xampp/htdocs/Teste/Controller/InsertCaminhao.php</file>
-            <file>file:/C:/xampp/htdocs/Teste/Veiculo.php</file>
-            <file>file:/C:/xampp/htdocs/Teste/Controller/Conexao.php</file>
         </group>
     </open-files>
 </project-private>

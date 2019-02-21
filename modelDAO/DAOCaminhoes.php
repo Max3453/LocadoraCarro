@@ -14,13 +14,13 @@ class DAOCaminhoes {
     
     public function Inserir ($Caminhoes){
 
-        $sql = "INSERT INTO `caminhoes` (`placa`, `cor`, `modelo`, `fabricante`, `datafabric`, `situacao`, `numeroEixos`, `capicadeCarga`, `potencia`) VALUES ('";
+        $sql = "INSERT INTO `caminhoes` (`placa`, `cor`, `modelo`, `fabricante`, `datafabric`,`valordia`, `situacao`, `numeroEixos`, `capicadeCarga`, `potencia`) VALUES ('";
         $sql = $sql . $Caminhoes->getPlaca()."','";
         $sql = $sql . $Caminhoes->getCor()."','";
         $sql = $sql . $Caminhoes->getModelo()."','";
         $sql = $sql . $Caminhoes->getFabricante()."','";
         $sql = $sql . $Caminhoes->getFabricacao()."','";
-        $sql = $sql . $Onibus->getValordia()."','";
+        $sql = $sql . $Caminhoes->getValordia()."','";
         $sql = $sql . $Caminhoes->getSituacao()."','";
         $sql = $sql . $Caminhoes->getNumeroEixos()."','";
         $sql = $sql . $Caminhoes->getCapacidadeCarga()."','";
