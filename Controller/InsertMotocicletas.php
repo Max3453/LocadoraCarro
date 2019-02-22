@@ -17,7 +17,7 @@ $potencia = $_POST['pot2'];
 $tipo = $_POST['select2'];
 
     
-$c1 = new Motocicletas($placa, $cor, $modelo, $fabricante, $anofabri, $valordia, $status, $numpass, $numei);
+$c1 = new Motocicletas($placa, $cor, $modelo, $fabricante, $anofabri,$valordia, $status, $numpass, $numei);
 $cx = new Conexao();
 $dao = new DAOMotocicletas($cx);
 $dao->Inserir($c1);

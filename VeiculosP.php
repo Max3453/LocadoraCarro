@@ -6,12 +6,12 @@ class VeiculosP extends Veiculo{
     private $arCondicionado;
     private $dHidraulica;
     
-        public function __construct($placa, $cor, $modelo, $fabricante, $fabricação, $valordia, $situação,$nPortas,$arCondicionado,$dHidraulica) {
-            parent::__construct($placa, $cor, $modelo, $fabricante, $fabricação, $valordia, $situação);
+        public function __construct($placa, $cor, $modelo, $fabricante, $fabricacao, $valordia, $situacao,$nPortas,$arCondicionado,$dHidraulica) {
+            parent::__construct($placa, $cor, $modelo, $fabricante, $fabricacao, $valordia, $situacao);
         
             $this->nPortas = $nPortas;
             $this->arCondicionado = $arCondicionado;
-            $this->dHidráulica = $dHidraulica;
+            $this->dHidraulica = $dHidraulica;
         }
         
         public function setNPortas($nPortas){
@@ -28,11 +28,11 @@ class VeiculosP extends Veiculo{
         return $this->arCondicionado; 
         }
         
-        public function setDHidráulica($dHidráulica){
-        $this->dHidráulica = $dHidráulica; 
+        public function setDHidraulica($dHidráulica){
+        $this->dHidraulica = $dHidraulica; 
         }
-        public function getDHidráulica() { 
-        return $this->dHidráulica; 
+        public function getDHidraulica() { 
+        return $this->dHidraulica; 
         }
 
 }

@@ -17,7 +17,8 @@ $nPortas = $_POST['numporta'];
 $arCondicionado = $_POST['ar'];
 $dHidraulica = $_POST['dh'];
     
-$c1 = new VeiculosP($placa, $cor, $modelo, $fabricante, $anofabri, $valordia, $status, $nPortas, $arCondicionado,$dh);
+
+$c1 = new VeiculosP($placa, $cor, $modelo, $fabricante, $anofabri, $valordia, $status, $nPortas, $arCondicionado,$dHidraulica);
 $cx = new Conexao();
 $dao = new DAOVeiculosP($cx);
 $dao->Inserir($c1);

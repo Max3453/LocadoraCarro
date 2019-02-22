@@ -1,6 +1,6 @@
 <?php
 
-require_once('Conexao.php');
+require_once('../Controller/Conexao.php');
 require_once('../Motocicletas.php');
 require_once ('../Veiculo.php');
 
@@ -14,25 +14,23 @@ class DAOMotocicletas {
     
     public function Inserir ($Motocicletas){
 
-        $sql = "INSERT INTO `motocicletas` (`placa`, `cor`, `modelo`, `fabricante`, `datafabric`, `situacao`, `potencia`, `tipo`) VALUES ('";
+        $sql = "INSERT INTO `motocicleta` (`placa`, `cor`, `modelo`, `fabricante`, `datafabric`,`valordia`,`situacao`, `potencia`, `tipo`) VALUES ('";
         $sql = $sql . $Motocicletas->getPlaca()."','";
         $sql = $sql . $Motocicletas->getCor()."','";
         $sql = $sql . $Motocicletas->getModelo()."','";
         $sql = $sql . $Motocicletas->getFabricante()."','";
         $sql = $sql . $Motocicletas->getFabricacao()."','";
-        $sql = $sql . $Onibus->getValordia()."','";
+        $sql = $sql . $Motocicletas->getValordia()."','";
         $sql = $sql . $Motocicletas->getSituacao()."','";
         $sql = $sql . $Motocicletas->getPotencia()."','";
         $sql = $sql . $Motocicletas->getTipo()."');";
-        
-        echo $sql;
         
         $banco = $this->conexao->GetBanco();
         $banco->query($sql);
         $this->conexao->Desconectar();
     }
     
-    public function Alterar($Motocicletas){
+    /*public function Alterar($Motocicletas){
         $sql = "update usuario set placa = ". $Motocicletas->getPlaca().
         ", cor = '".$Motocicletas->getCor().
         "', modelo = '".$Motocicletas->getModelo().
@@ -49,5 +47,5 @@ class DAOMotocicletas {
         $banco->query($sql);
         $this->conexao->Desconectar();
         
-    }
+    }*/
 }

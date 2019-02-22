@@ -1,6 +1,6 @@
 <?php
 
-require_once('Conexao.php');
+require_once('../Controller/Conexao.php');
 require_once('../Caminhoes.php');
 require_once ('../Veiculo.php');
 

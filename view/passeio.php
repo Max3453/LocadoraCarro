@@ -4,7 +4,7 @@
 <section>
 <div class="container">
     <div class="form-top">
-        <form action="../Controller/InsertVeiculosP.php" method="get">
+        <form action="../Controller/InsertVeiculosP.php" method="POST">
             <div class="form-inline">
                 <div class="form-group mb-4">
                     <label for="placa">Placa</label>
@@ -66,7 +66,7 @@
                     <label class="form-check-label" for="ar">Possui ar-condicionado?</label>&nbsp&nbsp
                 </div>
                 <div class="form-group mb-4 form-check">
-                    <input type="checkbox" name="dr" class="form-check-input" id="dh">
+                    <input type="checkbox" name="dh" class="form-check-input" id="dh">
                     <label class="form-check-label" for="dh">Possui direção hidráulica?</label>&nbsp&nbsp
                 </div>
             </div>
